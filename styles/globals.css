@@ -1,0 +1,60 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    height: 500vh;
+}
+
+/* DarkMode Setup */
+:root {
+  --background: #191919;
+  --fourground: #F1F1F1F1;
+}
+
+.light {
+  background: var(--fourground);
+  transition: .2s linear;
+}
+.dark {
+  background: var(--background);
+  transition: .2s linear;
+}
+/* X DarkMode Setup X */
+
+main {
+  position: relative;
+  padding-top: 6vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+.activeTab {
+  color: rgb(83, 83, 241);
+  font-weight: 400;
+  border-bottom: 1px solid rgb(83, 83, 241);
+  transition: all .2s ease-in-out;
+}
+
+.hamburger-react {
+  display: none;
+}
+
+
+
+
+@media (max-width:798px) {
+  .hamburger-react {
+    display: block;
+  }
+  .activeTab {
+    border-bottom: none;
+  }
+}

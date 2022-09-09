@@ -1,0 +1,16 @@
+.Button {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    border-radius: 5px;
+    padding: .3rem .5rem;
+    cursor: pointer;
+    
+}
+
+@media screen and (max-width: 798px) {
+    .Button {
+        padding: .1rem .3rem;
+
+    }
+}
